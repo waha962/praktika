@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Адаптивный блог</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas:
+                "header header"
+                "main sidebar"
+                "footer footer";
+            grid-template-columns: 3fr 1fr;
+            grid-gap: 20px;
+            padding: 20px;
+        }
+
+        header {
+            grid-area: header;
+            background: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        main {
+            grid-area: main;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .post {
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .post h2 {
+            margin-bottom: 10px;
+        }
+
+        aside {
+            grid-area: sidebar;
+            background: #f4f4f4;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        footer {
+            grid-area: footer;
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 992px) {
+            .container {
+                grid-template-areas:
+                    "header header"
+                    "main main"
+                    "sidebar sidebar"
+                    "footer footer";
+            }
+
+            main {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            main {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        @media (max-width: 576px) {
+            .container {
+                padding: 10px;
+                grid-gap: 10px;
+            }
+
+            .post, aside {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Мой блог</h1>
+        </header>
+
+        <main>
+            <article class="post">
+                <h2>Заголовок поста 1</h2>
+                <p>Краткое содержание поста...</p>
+            </article>
+
+            <article class="post">
+                <h2>Заголовок поста 2</h2>
+                <p>Краткое содержание поста...</p>
+            </article>
+
+            <article class="post">
+                <h2>Заголовок поста 3</h2>
+                <p>Краткое содержание поста...</p>
+            </article>
+
+            <article class="post">
+                <h2>Заголовок поста 4</h2>
+                <p>Краткое содержание поста...</p>
+            </article>
+
+            <article class="post">
+                <h2>Заголовок поста 5</h2>
+                <p>Краткое содержание поста...</p>
+            </article>
+
+            <article class="post">
+                <h2>Заголовок поста 6</h2>
+                <p>Краткое содержание поста...</p>
+            </article>
+        </main>
+
+        <aside>
+            <h3>Боковая панель</h3>
+            <p>Категории, теги, архив и т.д.</p>
+        </aside>
+
+        <footer>
+            <p>© 2023 Мой блог. Все права защищены.</p>
+        </footer>
+    </div>
+</body>
+</html>

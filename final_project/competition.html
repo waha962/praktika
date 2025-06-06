@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Описание конкурса</title>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    .competition {
+      max-width: 800px;
+      margin: auto;
+      text-align: center;
+    }
+    .competition img {
+      width: 100%;
+      border-radius: 10px;
+    }
+    .stats {
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+    @media print {
+      body * {
+        visibility: hidden;
+      }
+      .printable, .printable * {
+        visibility: visible;
+        color: #000;
+      }
+      .printable img {
+        filter: grayscale(100%);
+      }
+      header, footer, nav {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="container competition printable">
+    <h1>Семейный марафон</h1>
+    <img src="images/contest1.jpg" alt="Семейный марафон" />
+    <p>Примите участие всей семьей в весёлом и активном марафоне! Призы, музыка и заряд бодрости гарантированы!</p>
+    <div class="stats">
+      <p>Рейтинг: ⭐⭐⭐⭐☆</p>
+      <p>Участников записалось: 45</p>
+    </div>
+
+
+    <div class="printable">
+      <blockquote>
+        “Прекрасное событие! Мы с детьми отлично провели время!” — Алексей П.
+      </blockquote>
+    </div>
+  </section>
+</body>
+</html>

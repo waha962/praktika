@@ -1,0 +1,193 @@
+
+:root {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+  --accent-color: #00bcd4;
+  --card-bg: #1e1e1e;
+  --btn-bg: #00bcd4;
+  --btn-text: #000;
+  --border-color: #333;
+  --input-bg: #1a1a1a;
+  --input-text: #fff;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+.site-header {
+  background: #1a1a1a;
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav a, #theme-toggle {
+  margin-left: 1rem;
+  color: var(--text-color);
+  text-decoration: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+
+.slider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.slider-item {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+  max-width: 600px;
+}
+
+.slider-item img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.rating {
+  margin: 0.5rem 0;
+}
+
+.btn {
+  background: var(--btn-bg);
+  color: var(--btn-text);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+}
+
+input, select, button {
+  padding: 0.5rem;
+  background: var(--input-bg);
+  color: var(--input-text);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+
+
+section {
+  padding: 2rem 1rem;
+}
+
+.about-section img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-top: 1rem;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1rem;
+}
+
+.card {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+
+.review-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 1rem;
+}
+
+.review {
+  background: var(--card-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  min-width: 300px;
+}
+
+.review img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+
+.subscribe form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 400px;
+}
+
+
+footer {
+  background: #111;
+  padding: 2rem;
+  text-align: center;
+}
+
+footer a {
+  color: var(--accent-color);
+  margin: 0 0.5rem;
+  text-decoration: none;
+}
+
+
+@media (max-width: 796px) {
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .slider-item, .card, .review {
+    margin: 0 auto;
+  }
+}

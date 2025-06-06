@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Регистрация</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <section class="container">
+    <h1>Регистрация</h1>
+    <form>
+      <input type="email" placeholder="Email" required />
+      <input type="text" placeholder="Имя" required />
+      <input type="text" placeholder="Фамилия" required />
+
+      <label>Возраст:</label>
+      <input type="number" placeholder="Введите возраст" min="0" required />
+      <input type="range" min="0" max="100" value="25" />
+
+      <label>Пол:</label>
+      <label><input type="radio" name="gender" value="male" required /> Мужской</label>
+      <label><input type="radio" name="gender" value="female" required /> Женский</label>
+
+      <input type="password" placeholder="Пароль" required />
+      <input type="password" placeholder="Повтор пароля" required />
+
+      <label>Семейное фото:</label>
+      <input type="file" accept="image/*" required />
+
+      <label><input type="checkbox" required /> Согласен на обработку персональных данных</label>
+
+      <button type="submit">Зарегистрироваться</button>
+
+      <hr />
+      <h2>Члены семьи</h2>
+      <div class="family-member">
+        <input type="text" placeholder="Фамилия" />
+        <input type="text" placeholder="Имя" />
+        <input type="number" placeholder="Возраст" min="0" />
+        <select>
+          <option value="male">Мужской</option>
+          <option value="female">Женский</option>
+        </select>
+      </div>
+
+
+      <button type="button">Добавить члена семьи</button>
+      <button type="button">Удалить последнего</button>
+
+
+      <div class="message success">Успешная регистрация!</div>
+      <div class="message error">Ошибка: заполните все поля корректно.</div>
+    </form>
+  </section>
+</body>
+</html>

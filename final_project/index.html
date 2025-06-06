@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Моя семья — мой космос</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="dark-theme">
+  <header class="site-header">
+    <div class="container header-container">
+      <div class="logo">🚀 Моя семья — мой космос</div>
+      <nav class="nav">
+        <a href="registration.html">Регистрация</a>
+        <a href="#login">Авторизация</a>
+        <a href="account.html">Личный кабинет</a>
+        <a href="#about">О нас</a>
+        <a href="#competitions">Конкурсы</a>
+        <a href="#search">Поиск</a>
+        <a href="#contacts">Контакты</a>
+        <button id="theme-toggle">☀️ / 🌙</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="slider">
+      <div class="slider-item active">
+        <img src="images/contest1.jpg" alt="Конкурс 1" />
+        <div class="slider-content">
+          <h2>Семейный марафон</h2>
+          <p>Весёлый бег всей семьёй!</p>
+          <div class="rating">⭐⭐⭐⭐☆</div>
+          <a href="competition.html" class="btn">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="login" class="login-section">
+      <h2>Авторизация</h2>
+      <form>
+        <input type="email" placeholder="Email" required />
+        <input type="password" placeholder="Пароль" required />
+        <button type="submit">Войти</button>
+        <a href="#">Забыли пароль?</a>
+      </form>
+    </section>
+
+
+    <section id="about" class="about-section">
+      <h2>О нас</h2>
+      <p>Организаторы мероприятий для всей семьи с 2010 года. Мы верим, что семья — это космос, в котором каждый член уникален.</p>
+      <img src="images/family-about.jpg" alt="О нас" />
+    </section>
+
+
+    <section class="video-section">
+      <h2>Приветствие</h2>
+      <video controls>
+        <source src="media/video/hello.mp4" type="video/mp4" />
+        Ваш браузер не поддерживает видео.
+      </video>
+    </section>
+
+
+    <section id="competitions" class="competitions">
+      <h2>Конкурсы</h2>
+      <div class="grid">
+        <div class="card">
+          <img src="images/contest2.jpg" alt="" />
+          <h3>Кулинарная битва</h3>
+          <p>Готовим всей семьей!</p>
+          <span>Участников: 34</span>
+          <div class="rating">⭐⭐⭐⭐⭐</div>
+          <a href="#">Записаться</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <section id="search" class="search">
+      <input type="text" placeholder="Поиск по конкурсам..." />
+      <button>Поиск</button>
+    </section>
+
+
+    <section class="reviews">
+      <h2>Отзывы</h2>
+      <div class="review-slider">
+        <div class="review active">
+          <img src="images/user1.jpg" alt="" />
+          <h3>Ирина С.</h3>
+          <p>Это было волшебно! Дети в восторге.</p>
+          <span>12.03.2024</span>
+          <a href="competition.html">Подробнее</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Подписка -->
+    <section class="subscribe">
+      <h2>Подпишитесь на новости</h2>
+      <form>
+        <input type="email" placeholder="Введите email" required />
+        <label><input type="checkbox" required /> Согласен на обработку данных</label>
+        <button type="submit">Подписаться</button>
+      </form>
+    </section>
+  </main>
+
+  <footer id="contacts">
+    <div class="container">
+      <a href="tel:+74842234567">+7 (4842) 23-45-67</a>
+      <a href="mailto:family@cosmos.ru">family@cosmos.ru</a>
+      <nav>
+        <a href="index.html">Главная</a>
+        <a href="index-light.html">Главная-светлая</a>
+        <a href="registration.html">Регистрация</a>
+        <a href="competition.html">Конкурс</a>
+        <a href="account.html">Личный кабинет</a>
+        <a href="404.html">Страница не найдена</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+</body>
+</html>
