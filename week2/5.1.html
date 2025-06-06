@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Горные экскурсии</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #fff;
+            }
+
+            .site-header {
+                text-align: right;
+                padding-bottom: 25px;
+                border-bottom: 1px dashed black;
+                margin-bottom: 30px;
+            }
+
+            .nav-link {
+                margin: 10px;
+                text-decoration: none;
+                color: inherit;
+            }
+            
+            .nav-link:hover {
+                text-decoration: underline;
+            }
+
+            .page-title {
+                font-size: 50px;
+                text-align: center;
+                margin: 0 0 25px 0;
+                color: #333;
+            }
+
+            .content-wrapper {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+                max-width: 1200px;
+                margin: 0 auto;
+            }
+
+            .motivational-text {
+                width: 300px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+            }
+
+            .text-line {
+                color: lightblue;
+                font-size: 35px;
+                margin: 0;
+                line-height: 1.2;
+            }
+
+            .emphasized-text {
+                display: block;
+                text-align: right;
+                font-style: italic;
+            }
+
+            .text-line:hover {
+                font-size: 45px;
+                color: navy;
+                transition: all 0.3s ease;
+            }
+
+            .emphasized-text:hover {
+                color: darkorange;
+            }
+
+            .photo-gallery {
+                display: flex;
+                flex-wrap: wrap;
+                width: 500px;
+                gap: 0;
+            }
+
+            .image-container {
+                width: 166.66px;
+                height: 250px;
+                position: relative;
+                overflow: visible;
+            }
+
+            .gallery-image {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                position: absolute;
+                top: 0;
+                left: 0;
+                z-index: 1;
+                opacity: 0.5;
+                transition: all 0.3s ease;
+            }
+
+            .image-container:hover .gallery-image {
+                opacity: 1;
+                padding: 20px;
+                border: 3px solid navy;
+                z-index: 10;
+                background: white;
+            }
+        </style>
+    </head>
+    <body>
+        <header class="site-header">
+            <nav role="navigation" aria-label="Основная навигация">
+                <a href="#" class="nav-link">Сезонные акции</a>
+                <a href="#" class="nav-link">Контакты</a>
+            </nav>
+        </header>
+        
+        <main>
+            <h1 class="page-title">Горные экскурсии</h1>
+            <div class="content-wrapper">
+                <section class="photo-gallery" aria-label="Фотогалерея горных пейзажей">
+                    <div class="image-container">
+                        <img src="https://i.pinimg.com/originals/e9/a8/8e/e9a88e996fe2e024e2e6200a76506ee3.jpg" alt="Горный пейзаж 1" class="gallery-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="https://i.pinimg.com/originals/b8/5d/18/b85d1825cb4d406cbf97e804e0f33cb4.jpg" alt="Горный пейзаж 2" class="gallery-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="https://avatars.mds.yandex.net/i?id=59c5d90669ca762314b77abfc4fc6af7_l-5284430-images-thumbs&n=13" alt="Горный пейзаж 3" class="gallery-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="https://avatars.mds.yandex.net/i?id=9611f688cc0f4d15694a51da13b7434f_l-5268986-images-thumbs&n=13" alt="Горный пейзаж 4" class="gallery-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="https://i.pinimg.com/736x/8c/8d/d2/8c8dd2f885c6da56ee40b9e132bf37db.jpg" alt="Горный пейзаж 5" class="gallery-image">
+                    </div>
+                    <div class="image-container">
+                        <img src="https://avatars.mds.yandex.net/i?id=fd8ebcf7b1c56d429d1e8a5d1fa6e009_l-7451251-images-thumbs&n=13" alt="Горный пейзаж 6" class="gallery-image">
+                    </div>
+                </section>
+                
+                <aside class="motivational-text" aria-label="Мотивационный текст">
+                    <p class="text-line">Только</p>
+                    <p class="text-line"><em class="emphasized-text">горы!</em></p>
+                    <p class="text-line">Только</p>
+                    <p class="text-line"><em class="emphasized-text">вперёд!</em></p>
+                </aside>
+            </div>
+        </main>
+    </body>
+</html>

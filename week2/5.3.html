@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Навигационное меню</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                margin: 15px;
+                font-family: Arial, sans-serif;
+                background-color: #fff;
+            }
+            
+            .main-navigation {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                height: 60px;
+                border-top: 2px solid blueviolet;
+                border-bottom: 2px solid blueviolet;
+                background-color: #f8f8f8;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            
+            .nav-link {
+                text-decoration: none;
+                color: black;
+                padding: 8px 12px;
+                flex-grow: 1;
+                text-align: center;
+                transition: all 0.3s ease;
+                border-radius: 8px;
+                margin: 0 2px;
+            }
+            
+            .nav-link:hover {
+                background-color: rgba(65, 105, 225, 0.1);
+                transform: translateY(-1px);
+            }
+            
+            .nav-link--primary {
+                background-color: royalblue;
+                color: white;
+                border-radius: 10px;
+                margin: 0 5px;
+                font-weight: bold;
+            }
+            
+            .nav-link--primary:hover {
+                background-color: #4169E1;
+                color: white;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(65, 105, 225, 0.3);
+            }
+            
+            .nav-link--outlined {
+                border: 3px solid royalblue;
+                border-radius: 10px;
+                margin: 0 5px;
+                color: royalblue;
+                font-weight: bold;
+            }
+            
+            .nav-link--outlined:hover {
+                background-color: royalblue;
+                color: white;
+                transform: translateY(-2px);
+                box-shadow: 0 4px 8px rgba(65, 105, 225, 0.3);
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <nav class="main-navigation" role="navigation" aria-label="Основная навигация сайта">
+                <a href="#" class="nav-link nav-link--primary">Главная</a>
+                <a href="#" class="nav-link">Каталог</a>
+                <a href="#" class="nav-link">Магазины</a>
+                <a href="#" class="nav-link">Акции и скидки</a>
+                <a href="#" class="nav-link">Новинки</a>
+                <a href="#" class="nav-link">О нас</a>
+                <a href="#" class="nav-link">Партнёрство</a>
+                <a href="#" class="nav-link nav-link--outlined">Отзывы</a>
+            </nav>
+        </header>
+    </body>
+</html>

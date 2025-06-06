@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Таблица услуг</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #fff;
+            }
+            
+            .table-container {
+                max-width: 800px;
+                margin: 0 auto;
+                overflow-x: auto;
+            }
+            
+            .services-table {
+                border-collapse: collapse;
+                font-family: Arial, sans-serif;
+                width: 100%;
+                box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            }
+            
+            .table-header,
+            .table-cell {
+                border: 2px solid slateblue;
+                padding: 12px 8px;
+                text-align: left;
+                vertical-align: middle;
+            }
+            
+            .header-row {
+                background-color: lightblue;
+                font-weight: bold;
+            }
+            
+            .service-name {
+                background-color: lightblue;
+                font-weight: bold;
+                min-width: 180px;
+                text-align: left;
+                padding-left: 5px;
+            }
+            
+            .total-row {
+                background-color: orange;
+                font-weight: bold;
+            }
+            
+            .table-cell:hover {
+                background-color: rgba(106, 90, 205, 0.1);
+                transition: background-color 0.3s ease;
+            }
+            
+            .service-name:hover {
+                background-color: rgba(173, 216, 230, 0.8);
+            }
+        </style>
+    </head>
+    <body>
+        <main>
+            <div class="table-container">
+                <table class="services-table" role="table" aria-label="Таблица услуг по категориям">
+                    <thead>
+                        <tr class="header-row">
+                            <th class="table-header" scope="col"></th>
+                            <th class="table-header" scope="col">Эконом</th>
+                            <th class="table-header" scope="col">Стандарт</th>
+                            <th class="table-header" scope="col">Евро</th>
+                            <th class="table-header" scope="col">VIP</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th class="service-name" scope="row">Логотип</th>
+                            <td class="table-cell"></td>
+                            <td class="table-cell"></td>
+                            <td class="table-cell"></td>
+                            <td class="table-cell"></td>
+                        </tr>
+                        <tr>
+                            <th class="service-name" scope="row">Колористика</th>
+                            <td class="table-cell"></td>
+                            <td class="table-cell"></td>
+                            <td class="table-cell"></td>
+                            <td class="table-cell"></td>
+                        </tr>
+                        <tr>
+                            <th class="service-name" scope="row">Декоративные изображения</th>
+                            <td class="table-cell"></td>
+                            <td class="table-cell"></td>
+                            <td class="table-cell"></td>
+                            <td class="table-cell"></td>
+                        </tr>
+                        <tr class="total-row">
+                            <th class="service-name" scope="row">Сумма</th>
+                            <td class="table-cell"></td>
+                            <td class="table-cell"></td>
+                            <td class="table-cell"></td>
+                            <td class="table-cell"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </main>
+    </body>
+</html>

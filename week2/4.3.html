@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Товары для питомца</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+            }
+            
+            .page-title {
+                font-family: Arial, sans-serif;
+                font-size: 25px;
+                margin: 20px 0;
+                text-align: left;
+            }
+            
+            .products-section {
+                width: 870px;
+                height: 250px;
+                background-color: lightblue;
+                overflow: hidden;
+            }
+            
+            .product-item {
+                position: relative;
+                float: left;
+                width: 150px;
+                text-align: center;
+                padding: 10px;
+                border: 5px double orange;
+                margin: 40px 0px 40px 80px;
+                background-color: bisque;
+            }
+
+            .product-label {
+                margin-top: 0;
+                margin-bottom: 0;
+                border-bottom: 1px dotted black;
+                display: inline-block;
+            }
+            
+            .empty-label {
+                margin-top: 0;
+                margin-bottom: 0;
+                border-bottom: 1px dotted black;
+                display: inline-block;
+            }
+            
+            .company-values {
+                border-top: 5px solid navy;
+                border-bottom: 5px solid navy;
+                margin: 30px 60px 30px 30px;
+                height: 150px;
+                padding: 30px;
+                text-align: center;
+                clear: both;
+            }
+            
+            .value-item {
+                float: left;
+                width: 120px;
+                margin-left: 100px;
+            }
+            
+            .product-image {
+                width: 100px;
+                height: auto;
+                display: block;
+                margin: 0 auto 10px;
+            }
+            
+            .value-icon {
+                width: 60px;
+                height: auto;
+                display: block;
+                margin: 0 auto 10px;
+            }
+            
+            .value-description {
+                margin: 0;
+                font-size: 14px;
+                line-height: 1.3;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1 class="page-title">Товары для питомца</h1>
+        </header>
+        
+        <main>
+            <!-- Каталог продукции -->
+            <section class="products-section" aria-label="Каталог продукции">
+                <article class="product-item">
+                    <img src="https://avatars.mds.yandex.net/i?id=3a72fb197b24d018ab5e55199ba64feb_l-5226376-images-thumbs&n=13" alt="Корма для питомцев" class="product-image">
+                    <p class="empty-label"></p>
+                    <p class="product-label">Корма</p>
+                </article>
+                
+                <article class="product-item">
+                    <img src="https://avatars.mds.yandex.net/get-mpic/14220577/2a00000194b302c5a5ab003b0e4da00963ab/orig" alt="Игрушки для питомцев" class="product-image">
+                    <p class="product-label">Игрушки</p>
+                </article>
+                
+                <article class="product-item">
+                    <img src="https://avatars.mds.yandex.net/i?id=fb211fb32cc712226402bd5185c37ced_l-4507760-images-thumbs&n=13" alt="Домики для питомцев" class="product-image">
+                    <p class="product-label">Домики</p>
+                </article>
+            </section>
+            
+            <!-- Принципы работы -->
+            <section class="company-values" aria-label="Принципы работы">
+                <div class="value-item">
+                    <img src="https://i.pinimg.com/736x/74/1f/c5/741fc5ad05f7c0eb246421f16b471746.jpg" alt="Ветеринарная экспертиза" class="value-icon">
+                    <p class="value-description">товары проходят ветэкспертизу</p>
+                </div>
+                
+                <div class="value-item">
+                    <img src="https://cdn.stpulscen.ru/system/ckeditor_assets/pictures/377407/content_4_2.jpg" alt="Доставка" class="value-icon">
+                    <p class="value-description">доставка в любые точки города</p>
+                </div>
+                
+                <div class="value-item">
+                    <img src="https://manuals.plus/wp-content/uploads/2023/07/Screenshot_30-33.jpg" alt="Консультация" class="value-icon">
+                    <p class="value-description">бесплатная консультация</p>
+                </div>
+            </section>
+        </main>
+    </body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Pixel Design - Студия дизайна</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                background-color: #fff;
+                line-height: 1.6;
+            }
+            
+            .site-header {
+                background-color: navy;
+                padding: 10px;
+            }
+
+            .header-content {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+            }
+
+            .logo-image {
+                width: 200px;
+                height: 60px;
+                object-fit: contain;
+            }
+
+            .nav-link {
+                background-color: white;
+                color: black;
+                font-size: 20px;
+                text-decoration: none;
+                border: 1px solid white;
+                border-radius: 10px;
+                margin: 10px;
+                padding: 8px 12px;
+                transition: all 0.3s ease;
+                display: inline-block;
+            }
+
+            .nav-link:hover {
+                background-color: #f0f0f0;
+                transform: translateY(-2px);
+            }
+
+            .nav-link[href="#news"] {
+                background-color: lightskyblue;
+            }
+
+            .main-content {
+                flex: 1;
+                padding: 20px;
+            }
+
+            .page-title {
+                font-family: Arial, sans-serif;
+                text-align: center;
+                color: black;
+                font-size: 45px;
+                margin: 20px 0;
+            }
+            
+            .divider {
+                border: none;
+                height: 2px;
+                background-color: blue;
+                margin: 20px 0;
+            }
+
+            .section-title {
+                color: purple;
+                font-family: Arial, sans-serif;
+                margin: 40px 0;
+                font-size: 1.8em;
+                text-align: center;
+            }
+
+            .news-grid {
+                max-width: 1000px;
+                min-height: 450px;
+                display: flex;
+                justify-content: center;
+                margin: 0 auto;
+                gap: 20px;
+                flex-wrap: wrap;
+            }
+
+            .news-card {
+                width: 250px;
+                padding: 15px;
+                transition: all 0.3s ease;
+                border: 2px solid blue;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                background-color: #fafafa;
+            }
+            
+            .news-card:hover {
+                box-shadow: 0 8px 16px rgba(0, 0, 255, 0.3);
+                transform: translateY(-5px);
+            }
+            
+            .news-image {
+                margin: 0 auto 15px;
+                display: block;
+                border-radius: 8px;
+                max-width: 100%;
+                height: auto;
+            }
+            
+            .news-text {
+                text-align: center;
+                margin-top: 15px;
+                font-family: Arial, sans-serif;
+                color: #333;
+            }
+            
+            .highlight-text {
+                color: white;
+                background-color: navy;
+                padding: 2px 4px;
+                border-radius: 3px;
+            }
+            
+            .site-footer {
+                background-color: #8fddf2;
+                padding: 20px;
+                margin-top: auto;
+            }
+
+            .footer-content {
+                background-color: white;
+                padding: 15px;
+                border-radius: 8px;
+                font-family: Arial, sans-serif;
+                font-size: 14px;
+            }
+            
+            .contact-title {
+                font-weight: bold;
+                font-style: italic;
+                font-family: Arial, sans-serif;
+                font-size: 16px;
+                margin-bottom: 10px;
+                color: #333;
+            }
+            
+            .contact-info {
+                margin: 5px 0;
+                color: #555;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header class="site-header">
+            <div class="header-content">
+                <img src="https://cisess.umd.edu/assets/1/7/dragging_package_3947910__340.png" alt="Логотип Pixel Design" class="logo-image">
+                <nav role="navigation" aria-label="Основная навигация">
+                    <a href="#news" class="nav-link">Новости</a>
+                    <a href="#contest" class="nav-link">Конкурс</a>
+                    <a href="#plans" class="nav-link">Планы развития</a>
+                </nav>
+            </div>
+        </header>
+        
+        <main class="main-content">
+            <h1 class="page-title">Pixel Design</h1>
+            <hr class="divider">
+            
+            <section aria-label="Новости студии">
+                <h2 class="section-title">Наши последние новости</h2>
+                <div class="news-grid">
+                    <article class="news-card">
+                        <img src="https://avatars.mds.yandex.net/i?id=3ef6ab23df0ff72f0318dd5108d5ac753ce8f811-10142557-images-thumbs&n=13" alt="Новый дизайнер Cube" width="200" class="news-image">
+                        <p class="news-text">В нашей студии новый дизайнер: пиксель Cube. Именно он будет выполнять ваши заказы по трёхмерной графике. Увлекается ладшафтным и интерьерным дизайном. Недавно он давал интервью газете <i><span class="highlight-text">Progress news</span></i>.</p>
+                    </article>
+                    
+                    <article class="news-card">
+                        <img src="https://avatars.mds.yandex.net/i?id=5e7bf23f5141dafcccad41366d047de2c2da681a-4667953-images-thumbs&n=13" alt="Конкурс дизайна" width="140" class="news-image">
+                        <p class="news-text">Весной следующего года мы участвуем в конкурсе дизайна. Наши работы будут представлены в направлениях: <i><span class="highlight-text">веб-дизайн, полиграфический дизайн, дизайн интерьеров</span></i>. По каждому направлению мы собираемся представить несколько работ, которые пройдут предварительный отбор в нашей студии.</p>
+                    </article>
+                    
+                    <article class="news-card">
+                        <img src="https://avatars.mds.yandex.net/i?id=c58805ab4cf58c19204171c85b5247c5-5542693-images-thumbs&n=13" alt="Планирование работы" width="70" class="news-image">
+                        <p class="news-text">В этом месяце мы готовим <i><span class="highlight-text">годовое планирование нашей работы</span></i>. Кроме того, что мы принимаем и выполняем клиентские заказы по дизайну, мы участвуем в конкурсах, учимся на онлайн курсах, повышающих наше мастерство, просматриваем сборники лучших работ, которые можно найти в Интернете.</p>
+                    </article>
+                </div>
+            </section>
+        </main>
+        
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="contact-title">Контакты</div>
+                <div class="contact-info">Адрес: г. Техноград, ул. Дисплейная, 15</div>
+                <div class="contact-info">Тел.: 8895-6341</div>
+            </div>
+        </footer>
+    </body>
+</html>

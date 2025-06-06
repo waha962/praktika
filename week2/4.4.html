@@ -1,0 +1,161 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Зоопарк редких животных</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                line-height: 1.4;
+            }
+            
+            .page-wrapper {
+                width: 870px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+            
+            .content-layout {
+                display: flex;
+                gap: 20px;
+                margin-bottom: 40px;
+            }
+            
+            .zoo-info {
+                flex: 1;
+                max-width: 400px;
+            }
+            
+            .partner-ad {
+                width: 350px;
+                margin-top: 90px;
+                padding: 30px;
+                border: 2px dotted navy;
+                flex-shrink: 0;
+            }
+            
+            .testimonials-section {
+                width: 100%;
+                margin-top: 20px;
+                padding-left: 30px;
+            }
+            
+            .testimonial-item {
+                border-left: 10px double navy;
+                width: 350px;
+                padding-left: 10px;
+                margin-bottom: 20px;
+            }
+            
+            .customer-name {
+                color: firebrick;
+                border-bottom: 1px dotted firebrick;
+                display: inline-block;
+                padding-bottom: 2px;
+                margin-bottom: 5px;
+                font-weight: bold;
+            }
+            
+            .zoo-title {
+                color: purple;
+                margin: 0 0 15px 0;
+                font-size: 2em;
+            }
+            
+            .zoo-subtitle {
+                color: indigo;
+                font-size: 20px;
+                margin: 0 0 15px 0;
+            }
+            
+            .zoo-description {
+                font-size: 20px;
+                margin: 0 0 20px 0;
+            }
+            
+            .zoo-image {
+                width: 400px;
+                height: auto;
+                display: block;
+            }
+            
+            .ad-title {
+                color: indigo;
+                margin: 0 0 15px 0;
+                font-size: 1.2em;
+            }
+            
+            .ad-text {
+                margin: 0 0 15px 0;
+            }
+            
+            .ad-link {
+                color: inherit;
+                text-decoration: underline;
+            }
+            
+            .ad-images {
+                display: flex;
+                gap: 10px;
+            }
+            
+            .ad-image {
+                width: 150px;
+                height: auto;
+                flex-shrink: 0;
+            }
+            
+            .testimonial-text {
+                margin: 5px 0 0 0;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page-wrapper">
+            <div class="content-layout">
+                <main class="zoo-info">
+                    <header>
+                        <h1 class="zoo-title">Зоопарк редких животных</h1>
+                        <h2 class="zoo-subtitle">Более 150 видов</h2>
+                    </header>
+                    <p class="zoo-description">Вы увидите крупных диких представителей живой природы, а также редких птиц, змей и многое другое!</p>
+                    <img src="https://avatars.mds.yandex.net/i?id=cb5466b8234a2db804b707db4ad4ff11_l-5228318-images-thumbs&n=13" alt="Животные в зоопарке" class="zoo-image">
+                </main>
+                
+                <aside class="partner-ad">
+                    <h2 class="ad-title">Внимание! Специальное предложение от партнёра!</h2>
+                    <p class="ad-text"><a href="#" class="ad-link">Щенки хаски</a> от заводчика со всеми документами</p>
+                    <div class="ad-images">
+                        <img src="https://sobakovod.club/uploads/posts/2021-12/1638810217_56-sobakovod-club-p-sobaki-vse-o-khaskakh-ot-shchenka-do-vzros-62.jpg" alt="Щенок хаски 1" class="ad-image">
+                        <img src="https://avatars.mds.yandex.net/i?id=6056bb30fe2284ce3bedc5ec7b30043a_l-8901029-images-thumbs&n=13" alt="Щенок хаски 2" class="ad-image">
+                    </div>
+                </aside>
+            </div>
+            
+            <section class="testimonials-section" aria-label="Отзывы посетителей">
+                <article class="testimonial-item">
+                    <header class="customer-name">Олег</header>
+                    <p class="testimonial-text">Были в серпентарии. Ребёнок в восторге!</p>
+                </article>
+                
+                <article class="testimonial-item">
+                    <header class="customer-name">Наталья</header>
+                    <p class="testimonial-text">Спасибо за экскурсию! Очень интересно!</p>
+                </article>
+                
+                <article class="testimonial-item">
+                    <header class="customer-name">Анна</header>
+                    <p class="testimonial-text">Так и не попали к птицам. жаль… Однако, остальное очень здорово!</p>
+                </article>
+            </section>
+        </div>
+    </body>
+</html>

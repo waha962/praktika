@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Зоопарк редких животных</title>
+        <style>
+            * {
+                box-sizing: border-box;
+            }
+            
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 20px;
+                background-color: #fff;
+                line-height: 1.6;
+            }
+            
+            .page-container {
+                max-width: 870px;
+                margin: 0 auto;
+                position: relative;
+            }
+            
+            .main-content {
+                float: left;
+                width: 400px;
+                margin-right: 20px;
+            }
+            
+            .partner-advertisement {
+                float: right;
+                width: 350px;
+                margin-top: 90px;
+                padding: 30px;
+                border: 2px dotted navy;
+                border-radius: 8px;
+                background-color: #fafafa;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            
+            .reviews-section {
+                width: 100%;
+                float: left;
+                margin-left: 30px;
+                clear: both;
+                margin-top: 20px;
+            }
+            
+            .review-item {
+                border-left: 10px double navy;
+                width: 350px;
+                padding-left: 15px;
+                margin-bottom: 20px;
+                position: relative;
+                background-color: #f9f9f9;
+                border-radius: 0 8px 8px 0;
+                transition: all 0.3s ease;
+            }
+            
+            .review-item:hover {
+                background-color: #f0f0f0;
+                transform: translateX(5px);
+            }
+            
+            .reviewer-info {
+                color: firebrick;
+                display: inline-block;
+                margin-bottom: 8px;
+                padding-left: 40px;
+                position: relative;
+                font-weight: bold;
+            }
+
+            .reviewer-name {
+                border-bottom: 1px dotted firebrick;
+                padding-bottom: 2px;
+            }
+
+            .reviewer-info::before {
+                content: "";
+                display: inline-block;
+                width: 30px;
+                height: 30px;
+                background-image: url('https://t22.ru/images/telegram8.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                position: absolute;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+            }
+            
+            .page-title {
+                color: purple;
+                margin: 0 0 15px 0;
+                font-size: 2.2em;
+            }
+            
+            .subtitle {
+                color: indigo;
+                font-size: 20px;
+                margin: 0 0 15px 0;
+            }
+            
+            .description {
+                font-size: 20px;
+                margin-bottom: 20px;
+                color: #333;
+            }
+            
+            .main-image {
+                width: 100%;
+                max-width: 400px;
+                height: auto;
+                border-radius: 8px;
+                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            }
+            
+            .ad-title {
+                color: indigo;
+                margin: 0 0 15px 0;
+                font-size: 1.3em;
+            }
+            
+            .ad-link {
+                color: navy;
+                text-decoration: none;
+                font-weight: bold;
+            }
+            
+            .ad-link:hover {
+                text-decoration: underline;
+                color: darkblue;
+            }
+            
+            .ad-images {
+                margin-top: 15px;
+                display: flex;
+                gap: 10px;
+                flex-wrap: wrap;
+            }
+            
+            .ad-image {
+                width: 150px;
+                height: auto;
+                border-radius: 5px;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            }
+            
+            .review-text {
+                margin: 10px 0;
+                color: #444;
+            }
+            
+            .review-item::after {
+                content: "";
+                display: block;
+                width: 30px;
+                height: 35px;
+                background-image: url('https://i.pinimg.com/originals/d8/54/71/d854718a02ae8764a631f377001ce7ec.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                margin-top: 10px;
+                margin-right: 20px;
+                transition: all 0.3s ease;
+            }
+
+            .review-item:hover::after {
+                border-bottom: 3px dotted goldenrod;
+                cursor: pointer;
+                transform: scale(1.1);
+            }
+            
+            .clearfix::after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="page-container clearfix">
+            <main class="main-content">
+                <article>
+                    <header>
+                        <h1 class="page-title">Зоопарк редких животных</h1>
+                        <h2 class="subtitle">Более 150 видов</h2>
+                    </header>
+                    <p class="description">Вы увидите крупных диких представителей живой природы, а также редких птиц, змей и многое другое!</p>
+                    <img src="https://avatars.mds.yandex.net/i?id=cb5466b8234a2db804b707db4ad4ff11_l-5228318-images-thumbs&n=13" alt="Животные в зоопарке" class="main-image">
+                </article>
+            </main>
+            
+            <aside class="partner-advertisement" aria-label="Реклама партнера">
+                <h2 class="ad-title">Внимание! Специальное предложение от партнёра!</h2>
+                <p><a href="#" class="ad-link">Щенки хаски</a> от заводчика со всеми документами</p>
+                <div class="ad-images">
+                    <img src="https://sobakovod.club/uploads/posts/2021-12/1638810217_56-sobakovod-club-p-sobaki-vse-o-khaskakh-ot-shchenka-do-vzros-62.jpg" alt="Щенок хаски 1" class="ad-image">
+                    <img src="https://avatars.mds.yandex.net/i?id=6056bb30fe2284ce3bedc5ec7b30043a_l-8901029-images-thumbs&n=13" alt="Щенок хаски 2" class="ad-image">
+                </div>
+            </aside>
+            
+            <section class="reviews-section" aria-label="Отзывы посетителей">
+                <article class="review-item">
+                    <div class="reviewer-info"><span class="reviewer-name">Олег</span></div>
+                    <p class="review-text">Были в серпентарии. Ребёнок в восторге!</p>
+                </article>
+                
+                <article class="review-item">
+                    <div class="reviewer-info"><span class="reviewer-name">Наталья</span></div>
+                    <p class="review-text">Спасибо за экскурсию! Очень интересно!</p>
+                </article>
+                
+                <article class="review-item">
+                    <div class="reviewer-info"><span class="reviewer-name">Анна</span></div>
+                    <p class="review-text">Так и не попали к птицам. жаль… Однако, остальное очень здорово!</p>
+                </article>
+            </section>
+        </div>
+    </body>
+</html>
